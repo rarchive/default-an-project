@@ -4,7 +4,7 @@ import aws from 'aws-sdk';
 import uuid from 'uuid/v4';
 import HttpStatus from 'http-status-codes';
 import {logger} from '../modules/logger';
-import {secret} from '../config/secret';
+import secret from '../config/secret';
 
 const BUCKET_NAME = 'printingdiy';
 const REGION = 'ap-northeast-2';

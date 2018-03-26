@@ -1,4 +1,4 @@
-# default-project
+# default-an-project
 
 ## server
 - express
@@ -25,11 +25,14 @@
 sudo /etc/init.d/nginx stop
 forever stop 0
 
-# build
+# pull
+git checkout .
 git pull
+
+# build
 npm install
-rm -rf build
 webpack
+rm -rf build
 babel server --out-dir build
 
 # run

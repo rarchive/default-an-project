@@ -1,0 +1,17 @@
+<p>This is user.html</p>
+
+<p>
+    {{user}}
+</p>
+
+<form name="call1Form">
+    <input type="text" name="id" ng-model="user.data.id"/>
+    <input type="text" name="pw" ng-model="user.data.password"/>
+    <div class="button" ngf-select ng-model="user.data.profile" name="file"
+         ngf-pattern="'image/*'"
+         ngf-accept="'image/*'"
+         ngf-max-size="20MB"
+         ngf-resize="{width: 100, height: 100}">Select</div>
+
+    <button type="submit" ng-click="user.testCall1()">gogo</button>
+</form>

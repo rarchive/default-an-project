@@ -1,0 +1,44 @@
+{
+  "name": "default-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack && babel server --out-dir build",
+    "start": "babel server --out-dir build && node build/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rinmu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-angularjs-annotate": "^0.8.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "install": "^0.10.4",
+    "node-sass": "^4.7.2",
+    "npm": "^5.6.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.14",
+    "angular": "^1.6.8",
+    "aws-sdk": "^2.213.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "http-status-codes": "^1.3.0",
+    "log4js": "^2.5.3",
+    "multer": "^1.3.0",
+    "multer-s3": "^2.7.0",
+    "ng-file-upload": "^12.2.13",
+    "path": "^0.12.7",
+    "uuid": "^3.2.1",
+    "validate.js": "^0.12.0"
+  }
+}
